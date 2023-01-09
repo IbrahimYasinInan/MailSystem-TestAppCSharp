@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="mail.exe" version="1.0.0.2" publicKeyToken="f1306bda32989b4e" language="neutral" processorArchitecture="msil" type="win32" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="mail" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+    <commandLine file="mail.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!--
+          UAC Bildirim Seçenekleri
+          Windows Kullanıcı Hesabı Denetimi düzeyini değiştirmek istiyorsanız,
+           requestedExecutionLevel düğümünü aşağıdakilerden biriyle değiştirin.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+         Geriye dönük uyumluluk için Dosya ve Kayıt Defteri Sanallaştırması
+         kullanmak istiyorsanız, requestedExecutionLevel düğümünü silin.
+    -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="mail.exe" size="39384">
+      <assemblyIdentity name="mail" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>TDhL/1FiKjWpb1nBGNsODr0DB/OsQZXB+Z5O30r6BwA=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="mail.exe.config" size="563">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>3SoQWTzMsdmd9dduY81Qgbp+M4eu003tDvlYiqzU06E=</dsig:DigestValue>
+    </hash>
+  </file>
+<publisherIdentity name="CN=Happydll\Yasin İnan" issuerKeyHash="54a622bf888a0669e42b433fced5d48f55b3b3c5" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>HIxY8O/h1adcCPS2A0yhLbs79VXxyoGvgqUedcm5x2E=</DigestValue></Reference></SignedInfo><SignatureValue>Pdy17ugrerf2pXtgy5o/mupV+EHNqsJt06AkMPuW5Y9zJmW8KmZglbf91Nxmf56qUqoW+cKw2nUD/yFnh4yTFyysIP4gnU5+cwLD40M8zHhrJWEvQG9WP0YA3sFLCE7fhIa1jFWHblQRi8LXYzEQkzmhlcNvTqpY1XgPMvT7LxY=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>u8qRMovM3cwRq3f1OmGxUPiBpAQNtYolOdsS112yR9iA9mUzD2ORwmIReQdv+9mBO1EVfTiRuq+VvnFAq+vIGuy0Jo5dRzEYJbLjqxjthUS6MEsuCjrIeu19fVjWZ8UawkbUXolwyu7PHOTyOfSucUPEZiuEA/9o7sage+AU9M8=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="61c7b9c9751ea582af81caf155f53bbb2da14c03b6f4085ca7d5e1eff0588c1c" Description="" Url=""><as:assemblyIdentity name="mail.exe" version="1.0.0.2" publicKeyToken="f1306bda32989b4e" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=Happydll\Yasin İnan</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>qAIbwcR8wcsM7w10TFo/8HnYGv/our0WGb5xSI2rmE8=</DigestValue></Reference></SignedInfo><SignatureValue>Y1DuAqfjkCe22O5/5V6VmtpM4mI/6D5/znqXIW1TNqorIcO9jSHMhQSlvstDImEcpxzM3GObb7y5MW8bcFJbSLIINc40OvQBdYFzHscKy0HJO/NRT3ckz9qZucHK5lLf/DZdrw/LGdFpN4JpIelt08LAVU5kL1GjRcfZWvPU4Y0=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>u8qRMovM3cwRq3f1OmGxUPiBpAQNtYolOdsS112yR9iA9mUzD2ORwmIReQdv+9mBO1EVfTiRuq+VvnFAq+vIGuy0Jo5dRzEYJbLjqxjthUS6MEsuCjrIeu19fVjWZ8UawkbUXolwyu7PHOTyOfSucUPEZiuEA/9o7sage+AU9M8=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB5TCCAU6gAwIBAgIQWMGwh4/TgpFEnfkgPo1aZDANBgkqhkiG9w0BAQsFADAxMS8wLQYDVQQDHiYASABhAHAAcAB5AGQAbABsAFwAWQBhAHMAaQBuACABMABuAGEAbjAeFw0yMjEyMTEyMDA3MDZaFw0yMzEyMTIwMjA3MDZaMDExLzAtBgNVBAMeJgBIAGEAcABwAHkAZABsAGwAXABZAGEAcwBpAG4AIAEwAG4AYQBuMIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQC7ypEyi8zdzBGrd/U6YbFQ+IGkBA21iiU52xLXXbJH2ID2ZTMPY5HCYhF5B2/72YE7URV9OJG6r5W+cUCr68ga7LQmjl1HMRglsuOrGO2FRLowSy4KOsh67X19WNZnxRrCRtReiXDK7s8c5PI59K5xQ8RmK4QD/2juxqB74BT0zwIDAQABMA0GCSqGSIb3DQEBCwUAA4GBAK4Wvw3x/ETcnoXIBDM2jYnuS8WRJiKN5v5ii3q3SKVLlp1sWTqtpWpXVlI3JKgqu9CIAwvc/zU0w6gkNjukpenx7rd2YDd6HNoyTVrX17sk7MBmz7Nhqn3PB0Vtur9/RJzbzcYG5fYVVTPSU/uB8RVJm0b4cOduaAcJmfA7Oqb0</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>
